@@ -8,6 +8,7 @@ module AjaxDatatablesRails
     GLOBAL_SEARCH_DELIMITER = ' '
 
     def initialize(params, options = {})
+      Rails.logger.debug "################"
       @params    = params
       @options   = options
       @datatable = Datatable::Datatable.new(self)
